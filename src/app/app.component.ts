@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title: string = 'Bonjour';
 
-  isAdmin: boolean = true;
+  isAdmin: boolean = false;
+  admin(): boolean {
+    return this.isAdmin = !this.isAdmin;
+  }
 }
